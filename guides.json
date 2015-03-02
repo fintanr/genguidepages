@@ -1,0 +1,29 @@
+{
+    "guides" : [
+	    {   "indir" : "ubuntu-simple",
+		    "outfile" : "weave-docker-ubuntu-simple.md",
+		    "layout" : "article",
+		    "markdown" : "kramdown",
+		    "highlighter" : "pygments" }, 
+	    {   "indir" : "centos-simple",
+		    "outfile" : "weave-docker-centos-simple.md",
+		    "layout" : "article",
+		    "markdown" : "kramdown",
+		    "highlighter" : "pygments"	},	
+	    {   "indir" : "coreos-simple",
+		    "outfile" : "weave-docker-coreos-simple.md",
+		    "layout" : "article",
+		    "markdown" : "kramdown",
+		    "highlighter" : "pygments"	},	
+	    {   "indir" : "nginx-ubuntu-simple",
+		    "outfile" : "weave-docker-nginx-ubuntu-simple.md",
+		    "layout" : "article",
+		    "markdown" : "kramdown",
+		    "highlighter" : "pygments"	},	
+	    {   "indir" : "aws-nginx-ubuntu-simple",
+		    "outfile" : "weave-docker-aws-nginx-ubuntu-simple.md",
+		    "layout" : "article",
+		    "markdown" : "kramdown",
+		    "highlighter" : "pygments"	}
+    ]
+}
