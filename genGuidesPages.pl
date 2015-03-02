@@ -9,6 +9,7 @@
 use JSON;
 use Getopt::Std;
 use File::Basename;
+use File::Copy;
 use constant TRUE => 1;
 use constant FALSE => 0;
 use strict;
@@ -35,7 +36,9 @@ my $json = loadConfigDetails($confFile);
 
 for ( my $i = 0; $i <= $#{$$json{'guides'}}; $i++ ) {
     my $inFile = sprintf("%s/%s/README.md", $gitClone, $$json{'guides'}->[$i]->{'indir'});
+    my $inImage = sprintf("%s/%s/%s", $gitClone, $$json{'guides'}->[$i]->{'indir'}, $$json{'guides'}->[$i]->{'image'});
     my $outFile = sprintf("%s/%s", $outDir, $$json{'guides'}->[$i]->{'outfile'});
+    my $outImage = sprintf("%s/%s", $outDir, $$json{'guides'}->[$i]->{'image'});
     my $layout = $$json{'guides'}->[$i]->{'layout'};
     my $markdown = $$json{'guides'}->[$i]->{'markdown'};
     my $highlighter = $$json{'guides'}->[$i]->{'highlighter'};
@@ -52,6 +55,10 @@ for ( my $i = 0; $i <= $#{$$json{'guides'}}; $i++ ) {
     printf OUT ("---\n\n");
     printf OUT ("%s\n", $jekyll);
     close(OUT);
+
+    if ( -f $inImage ) {
+        copy($inImage, $outImage);
+    }
 }
 
     # grab the relevant readme, and fill in the various bits of 
@@ -78,6 +85,8 @@ sub fixupReadMe {
         } elsif ( /^```$/ && $doEnd ) {
             $jekyll .= "{% endhighlight %}\n";
             $doEnd = FALSE;
+        } elsif ( /(^\!\[.*\])\(.*\/(.*\.png)\)$/ ) {
+            $jekyll .= "$1($2)\n\n"; 
         } else {
             $jekyll .= "$_\n";
         }
