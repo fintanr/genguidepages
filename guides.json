@@ -5,30 +5,40 @@
 		    "layout" : "article",
 		    "markdown" : "kramdown",
 		    "highlighter" : "pygments",
-            "image" : "Simple_Weave.png" }, 
+            "image" : "Simple_Weave.png",
+            "additionalFiles" : [ 
+                {
+                    "infile" : "DockerREADME.md",
+                    "outfile" : "weave-docker-ubuntu-simple-docker.md"
+                }
+            ] }, 
 	    {   "indir" : "centos-simple",
 		    "outfile" : "weave-docker-centos-simple.md",
 		    "layout" : "article",
 		    "markdown" : "kramdown",
 		    "highlighter" : "pygments",
-            "image" : "Simple_Weave.png" },	
+            "image" : "Simple_Weave.png",
+            "additionaFiles" : [] },	
 	    {   "indir" : "coreos-simple",
 		    "outfile" : "weave-docker-coreos-simple.md",
 		    "layout" : "article",
 		    "markdown" : "kramdown",
 		    "highlighter" : "pygments",
-            "image" : "Simple_Weave.png" },	
+            "image" : "Simple_Weave.png",
+            "additionalFiles" : [] },	
 	    {   "indir" : "nginx-ubuntu-simple",
 		    "outfile" : "weave-docker-nginx-ubuntu-simple.md",
 		    "layout" : "article",
 		    "markdown" : "kramdown",
 		    "highlighter" : "pygments",
-            "image" : "3_Node_Nginx_Example.png" },	
+            "image" : "3_Node_Nginx_Example.png",
+            "additionalFiles" : [] },	
 	    {   "indir" : "aws-nginx-ubuntu-simple",
 		    "outfile" : "weave-docker-aws-nginx-ubuntu-simple.md",
 		    "layout" : "article",
 		    "markdown" : "kramdown",
 		    "highlighter" : "pygments",
-            "image" : "2_Node_Nginx_AWS_Example.png" }
+            "image" : "2_Node_Nginx_AWS_Example.png",
+            "additionalFiles" : [] }
     ]
 }
