@@ -39,6 +39,20 @@
 		    "markdown" : "kramdown",
 		    "highlighter" : "pygments",
             "image" : "2_Node_Nginx_AWS_Example.png",
+            "additionalFiles" : [] },
+	    {   "indir" : "weave-ansible-haproxy-aws",
+		    "outfile" : "weave-ansible-docker-haproxy-aws.md",
+		    "layout" : "article",
+		    "markdown" : "kramdown",
+		    "highlighter" : "pygments",
+            "image" : "2_Node_HAProxy_AWS_Example.png",
+            "additionalFiles" : [] },
+	    {   "indir" : "microservices-seneca-ubuntu-simple",
+		    "outfile" : "weave-microservices-docker-nodejs.md",
+		    "layout" : "article",
+		    "markdown" : "kramdown",
+		    "highlighter" : "pygments",
+            "image" : "Microservices_Seneca_Weave.png",
             "additionalFiles" : [] }
     ]
 }
