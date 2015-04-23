@@ -42,6 +42,7 @@ for ( my $i = 0; $i <= $#{$$json{'guides'}}; $i++ ) {
     my $layout = $$json{'guides'}->[$i]->{'layout'};
     my $markdown = $$json{'guides'}->[$i]->{'markdown'};
     my $highlighter = $$json{'guides'}->[$i]->{'highlighter'};
+    my $keywords = $$json{'guides'}->[$i]->{'keywords'}; 
 
     my ( $title, $jekyll) = fixupReadMe($inFile);
 
@@ -49,7 +50,8 @@ for ( my $i = 0; $i <= $#{$$json{'guides'}}; $i++ ) {
     printf OUT ("---\n");
     printf OUT ("layout: %s\n", $layout);
     printf OUT ("title: %s\n", $title);
-    printf OUT ("desciption: Weave Getting Started Guides\n");
+    printf OUT ("description: \"$title\"\n");
+    printf OUT ("keywords: \"$keywords\"\n");
     printf OUT ("markdown: %s\n", $markdown);
     printf OUT ("highlighter: %s\n", $highlighter);
     printf OUT ("---\n\n");

@@ -6,6 +6,7 @@
 		    "markdown" : "kramdown",
 		    "highlighter" : "pygments",
             "image" : "Simple_Weave.png",
+            "keywords" : "weave, docker, containers, networking, software defined networking, dockerfile, ubuntu, apache, php",
             "additionalFiles" : [ 
                 {
                     "infile" : "DockerREADME.md",
@@ -18,6 +19,7 @@
 		    "markdown" : "kramdown",
 		    "highlighter" : "pygments",
             "image" : "Simple_Weave.png",
+            "keywords" : "weave, docker, containers, networking, software defined networking, dockerfile, centos, apache, php",
             "additionaFiles" : [] },	
 	    {   "indir" : "coreos-simple",
 		    "outfile" : "weave-docker-coreos-simple.md",
@@ -25,6 +27,7 @@
 		    "markdown" : "kramdown",
 		    "highlighter" : "pygments",
             "image" : "Simple_Weave.png",
+            "keywords" : "weave, docker, containers, networking, software defined networking, coreos, apache, dns",
             "additionalFiles" : [] },	
 	    {   "indir" : "nginx-ubuntu-simple",
 		    "outfile" : "weave-docker-nginx-ubuntu-simple.md",
@@ -32,6 +35,7 @@
 		    "markdown" : "kramdown",
 		    "highlighter" : "pygments",
             "image" : "3_Node_Nginx_Example.png",
+            "keywords" : "weave, docker, containers, networking, software defined networking, ubuntu, nginx, load blancing, microservices, dns",
             "additionalFiles" : [] },	
 	    {   "indir" : "aws-nginx-ubuntu-simple",
 		    "outfile" : "weave-docker-aws-nginx-ubuntu-simple.md",
@@ -39,6 +43,7 @@
 		    "markdown" : "kramdown",
 		    "highlighter" : "pygments",
             "image" : "2_Node_Nginx_AWS_Example.png",
+            "keywords" : "weave, docker, containers, networking, software defined networking, amazon web services, aws, ngnix",
             "additionalFiles" : [] },
 	    {   "indir" : "weave-ansible-haproxy-aws",
 		    "outfile" : "weave-ansible-docker-haproxy-aws.md",
@@ -46,6 +51,7 @@
 		    "markdown" : "kramdown",
 		    "highlighter" : "pygments",
             "image" : "2_Node_HAProxy_AWS_Example.png",
+            "keywords" : "weave, docker, containers, networking, software defined networking, ansible, haproxy, aws, amazon web services, ubuntu",
             "additionalFiles" : [] },
 	    {   "indir" : "microservices-seneca-ubuntu-simple",
 		    "outfile" : "weave-microservices-docker-nodejs.md",
@@ -53,6 +59,7 @@
 		    "markdown" : "kramdown",
 		    "highlighter" : "pygments",
             "image" : "Microservices_Seneca_Weave.png",
+            "keywords" : "weave, docker, containers, networking, software defined networking, node.js, node, ubuntu, microservices, dns",
             "additionalFiles" : [] }
     ]
 }
